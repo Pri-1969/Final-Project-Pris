@@ -3,16 +3,152 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 25px;
 }
 
+/* this section contains all the styles of the header or nav */
+
 nav{
-    background-color: greenyellow;
     align-items: center;
     justify-content: space-between;
 }
 
+#leftnav , #rightnav{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+#header{
+    background: linear-gradient(to right, #fff,#55F5A3, #E1FF25CC);
+    width: 100%;
+}
+
+#button_1{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 25px;
+    padding: 5px;
+
+}
+
+
+/* This section contains all the styles of the body */
+
+.section_1_content,.section_3_content{
+    display: flex;
+}
+#section_1{
+    background: linear-gradient(to right, #fff,#55F5A3, #E1FF25CC);
+    width: 100%;
+}
+
+#section_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    margin-left: 5rem;
+}
+
+#button_2{
+    color: black;
+    background-color: lightgreen;
+}
+
+#section_3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+}
+
+#section_4_list_items{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: -1px;
+}
+
+.section_4_content{
+    display: flex;
+}
+
+#section_5_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+#section_5{
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+#section_5{
+    background-color: black;
+    color: white;
+}
+
+#button_2,#button_3,#button_4,#button_5,#button_6,#button_7,#button_8,#button_9{
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+#button_4, #button_5, #button_7, #button_8, #button_9{
+    color: white;
+    background-color: black;
+}
+
+.six_buttons{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+#section_6{
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+}
+
+#section_6a, #section_6b{
+    background-color: #F5F3EB;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.main_heading{
+    font-size: 80px;
+}
+
+h1{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.section_7_cards{
+    grid-template-columns: repeat(3 , 1fr);
+    background-color: #F5F3EB;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+#section_7{
+    margin: 5rem;
+}
+
+.section_7cards{
+    display: flex;
+    gap: 10rem;
+}
 a {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
     color: black;
@@ -29,8 +165,12 @@ ul {
     justify-content: space-between ;
 }
 
+.prefooternote{
+    font-size: 90px;
+}
+
+/* this section contains all the styles of the footer */
 footer{
-    display: flex;
     gap: 10px;
     background-color: black; 
     align-items: center; 
@@ -42,32 +182,29 @@ footer{
     }
 }
 
-#leftnav , #rightnav{
+#lower_footer{
     display: flex;
-    gap: 12px;
-    align-items: center;
-}
-main,footer{
-    padding: 10px;
+    justify-content: space-between;
+    gap: 150px;
 }
 
-#section_7, #section_2, #section_1, #section_3{
-    display: flex;
-}
-
-button{
-        padding: 5px;
-    border: none;
+.wrapper{
+    border: 2px solid white;
+    width: fit-content;
     border-radius: 25px;
-    cursor: pointer;
+    padding: 1px;
 }
 
-#button_2{
-    color: black;
-    background-color: lightgreen;
-}
-
-#button_4, #button_5, #button_7, #button_8, #button_9{
-    color: white;
+#input{
+    border: white;
     background-color: black;
+    background-size: 25px;
+}
+
+#button_10{
+    padding: 8px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+    
 }
