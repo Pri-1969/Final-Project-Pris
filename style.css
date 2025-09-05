@@ -6,7 +6,7 @@
     font-size: 25px;
 }
 
-/* this section contains all the styles of the header or nav */
+/* this section contains all the styls of the header or nav */
 
 nav{
     align-items: center;
@@ -29,12 +29,15 @@ nav{
     color: black;
     border-radius: 25px;
     padding: 5px;
-
+    cursor: pointer;
 }
 
 
 /* This section contains all the styles of the body */
 
+#section_1, #section_2, #section_3, #section_4, #section_5, #section_6, #section_7{
+    padding: 2rem;
+}
 .section_1_content,.section_3_content{
     display: flex;
 }
@@ -48,7 +51,6 @@ nav{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 5rem;
-    margin-left: 5rem;
 }
 
 #button_2{
@@ -56,11 +58,13 @@ nav{
     background-color: lightgreen;
 }
 
-#section_3{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 3rem;
+.section_3_text, .section_2_text, .section_4_text{
+    width: 23rem;
+}
+
+.section_3_content{
+    display: flex;
+    gap: 5rem;
 }
 
 #section_4_list_items{
@@ -71,21 +75,20 @@ nav{
 
 .section_4_content{
     display: flex;
+    gap: 10rem;
 }
 
 #section_5_icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 3rem;
 }
 
 #section_5{
     margin: 3rem;
     padding: 2rem;
     border-radius: 30px;
-}
-
-#section_5{
+    width: 50rem;
     background-color: black;
     color: white;
 }
@@ -171,6 +174,7 @@ ul {
 
 /* this section contains all the styles of the footer */
 footer{
+    padding: 2rem;
     gap: 10px;
     background-color: black; 
     align-items: center; 
@@ -192,13 +196,14 @@ footer{
     border: 2px solid white;
     width: fit-content;
     border-radius: 25px;
-    padding: 1px;
+    padding: 3px;
 }
 
 #input{
-    border: white;
+    border: 0px;
     background-color: black;
     background-size: 25px;
+    color: white;
 }
 
 #button_10{
@@ -207,4 +212,7 @@ footer{
     border-bottom-right-radius: 50px;
     cursor: pointer;
     
+}
+#input:focus{
+    outline: none;
 }
